@@ -1,0 +1,24 @@
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f3f3;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%;
+        flex-direction: column;
+        text-align: center;
+}
+.cookie {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cookie:hover {
+    transform: scale(1.05)
+}
+
+.cookie:active {
+    transform: scale(0.9)
+}

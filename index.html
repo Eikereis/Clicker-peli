@@ -8,55 +8,114 @@
     </head>
     <body>
         <h1>Clicker</h1>
-        <div>
+        <div class="cookie">
             <p id="clicks">0</p>
-
-            <img src="images/Keksi.png" class="cookie" onclick="buttonclick()">
+            <img src="images/Keksi.png"  onclick="buttonclick()">
         </div>
 
-        <div>
-            <p>Example Shop</p>
-            <div>
-                <p>ClickPower Increase</p>
-                <p id="upgradeclickcost">Cost: 500</p>
-                <button onclick="purchase(7)">Buy</button>
-            </div>
-            <div>
-                <p>Tool Purchase: +1 Cps</p>
-                <p id="toolcost">Cost: 25</p>
-                <button onclick="purchase(1)">Buy Tool</button>
-            </div>
-            <div>
-                <p>Farm Purchase: +5 Cps</p>
-                <p id="farmcost">Cost: 125</p>
-                <button onclick="purchase(2)">Buy Farm</button>
-            </div>
-            <div>
-                <p>Worker Purchase: +25 Cps</p>
-                <p id="workercost">Cost: 750</p>
-                <button onclick="purchase(3)">Buy Worker</button>
-            </div>
-            <div>
-                <p>Machine Purchase: +100 Cps</p>
-                <p id="machinecost">Cost: 5000</p>
-                <button onclick="purchase(4)">Buy Machine</button>
-            </div>
-            <div>
-                <p>Science Purchase: +250 Cps</p>
-                <p id="sciencecost">Cost: 50000</p>
-                <button onclick="purchase(5)">Buy Farm</button>
-            </div>
-            <div>
-                <p>Pure Evil Purchase: +10000 Cps</p>
-                <p id="sciencecost">Cost: 1677215</p>
-                <button onclick="purchase(6)">Buy Pure Evil</button>
-            </div>
+        <div class="container">
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Upgrades</th>
+                        <th>Cost</th>
+                        <th>Purchase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ClickPower Increase</td>
+                        <td id="upgradeclickcost">500</td>
+                        <td><button onclick="purchase(7)">Upgrade Clicking</button></td>
+                    </tr>
+                    <tr>
+                        <td>Tool Upgrade</td>
+                        <td id="toolUpgradeCost">1000</td>
+                        <td><button onclick="upgrade(1)">Buy Upgrade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Farm Upgrade</td>
+                        <td id="farmUpgradeCost">2500</td>
+                        <td><button onclick="upgrade(2)">Buy Upgrade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Worker Upgrade</td>
+                        <td id="workerUpgradeCost">5000</td>
+                        <td><button onclick="upgrade(3)">Buy Upgrade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Machine Upgrade</td>
+                        <td id="machineUpgradeCost">10000</td>
+                        <td><button onclick="upgrade(4)">Buy Upgrade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Science Upgrade</td>
+                        <td id="scienceUpgradeCost">80000</td>
+                        <td><button onclick="upgrade(5)">Buy Upgrade</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pure Evil Upgrade</td>
+                        <td id="evilUpgradeCost">10000000</td>
+                        <td><button onclick="upgrade(6)">Buy Upgrade</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        
+        <div class="items">
+            <p>Item Shop</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Cost</th>
+                        <th>Purchase</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tool Purchase: +1 Cps</td>
+                        <td id="toolcost">25</td>
+                        <td><button onclick="purchase(1)">Buy Tool</button></td>
+                    </tr>
+                    <tr>
+                        <td>Farm Purchase: +5 Cps</td>
+                        <td id="farmcost">125</td>
+                        <td><button onclick="purchase(2)">Buy Farm</button></td>
+                    </tr>
+                    <tr>
+                        <td>Worker Purchase: +25 Cps</td>
+                        <td id="workercost">750</td>
+                        <td><button onclick="purchase(3)">Buy Worker</button></td>
+                    </tr>
+                    <tr>
+                        <td>Machine Purchase: +100 Cps</td>
+                        <td id="machinecost">5000</td>
+                        <td><button onclick="purchase(4)">Buy Machine</button></td>
+                    </tr>
+                    <tr>
+                        <td>Science Purchase: +250 Cps</td>
+                        <td id="sciencecost">50000</td>
+                        <td><button onclick="purchase(5)">Buy Farm</button></td>
+                    </tr>
+                    <tr>
+                        <td>Pure Evil Purchase: +10000 Cps</td>
+                        <td id="evilcost">1677215</td>
+                        <td><button onclick="purchase(6)">Buy Pure Evil</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+
 
 
         <div>
             <p id="randomnotification"></p>
         </div>
-        <script src="main.js"></script>    
+        <script src="main.js">
+        </script>    
     </body>
 </html>

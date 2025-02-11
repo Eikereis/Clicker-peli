@@ -1,24 +1,52 @@
 body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f3f3f3;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 100%;
-        flex-direction: column;
-        text-align: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.upgrades, .cookie {
+    width: 45%;
+}
+
+
 .cookie {
-    transition: transform 0.3s ease;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 60%;
+}
+
+.cookie img {
+    width: 300px;
     cursor: pointer;
+    padding-top: 10;
 }
 
-.cookie:hover {
-    transform: scale(1.05)
+.cookie img:hover {
+    transition: transform 0.3s ease;
+
+    
 }
 
-.cookie:active {
-    transform: scale(0.9)
+.cookie img:active {
+    transform: scale(0.95)
+}
+
+.items {
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.upgrades {
+    padding-right: 20px;
 }

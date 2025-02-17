@@ -4,20 +4,20 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="styles.css">
-     <title>Docuent</title>
+     <title>Do Not Believe Cookies</title>
     </head>
     <body>
-        <h1>Clicker</h1>
+        <h1>Cookie Clicker</h1>
         <div class="cookie">
             <p id="clicks">0</p>
             <img src="images/Keksi.png"  onclick="buttonclick()">
         </div>
 
         <div class="container">
-            <table>
+            <table class="upgrades">
                 
                 <thead>
-                    <tr>
+                    <tr class="info">
                         <th>Upgrades</th>
                         <th>Cost</th>
                         <th>Purchase</th>
@@ -27,7 +27,7 @@
                     <tr>
                         <td>ClickPower Increase</td>
                         <td id="upgradeclickcost">500</td>
-                        <td><button onclick="purchase(7)">Upgrade Clicking</button></td>
+                        <td><button onclick="purchase(7)">Buy Upgrade</button></td>
                     </tr>
                     <tr>
                         <td>Tool Upgrade</td>
@@ -62,59 +62,55 @@
                 </tbody>
             </table>
         </div>
-        
-        <div class="items">
-            <p>Item Shop</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Cost</th>
-                        <th>Purchase</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Tool Purchase: +1 Cps</td>
-                        <td id="toolcost">25</td>
-                        <td><button onclick="purchase(1)">Buy Tool</button></td>
-                    </tr>
-                    <tr>
-                        <td>Farm Purchase: +5 Cps</td>
-                        <td id="farmcost">125</td>
-                        <td><button onclick="purchase(2)">Buy Farm</button></td>
-                    </tr>
-                    <tr>
-                        <td>Worker Purchase: +25 Cps</td>
-                        <td id="workercost">750</td>
-                        <td><button onclick="purchase(3)">Buy Worker</button></td>
-                    </tr>
-                    <tr>
-                        <td>Machine Purchase: +100 Cps</td>
-                        <td id="machinecost">5000</td>
-                        <td><button onclick="purchase(4)">Buy Machine</button></td>
-                    </tr>
-                    <tr>
-                        <td>Science Purchase: +250 Cps</td>
-                        <td id="sciencecost">50000</td>
-                        <td><button onclick="purchase(5)">Buy Farm</button></td>
-                    </tr>
-                    <tr>
-                        <td>Pure Evil Purchase: +10000 Cps</td>
-                        <td id="evilcost">1677215</td>
-                        <td><button onclick="purchase(6)">Buy Pure Evil</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
+           
 
 
+<div class="items">
+    <p class="info">Item Shop</p>
+    <table>
+        <thead>
 
-
+        </thead>
+        <tbody class="itemshop">
+            <tr>
+                <td><img src="images/Shovel.png" alt="Tool" class="itemimages"><p id="toolcps"></p></td>
+                <td id="toolcost">Cost:25</td>
+                <td><button onclick="purchase(1)">Purchase</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/Farm.png" alt="Tool" class="itemimages"><p id="farmcps"></p></td>
+                <td id="farmcost">Cost:125</td>
+                <td><button onclick="purchase(2)">Purchase</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/Worker.png" alt="Tool" class="itemimages"><p id="workercps"></p></td>
+                <td id="workercost">Cost:750</td>
+                <td><button onclick="purchase(3)">Purchase</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/machine.png" alt="Tool" class="itemimages"><p id="machinecps"></p></td>
+                <td id="machinecost">Cost:5000</td>
+                <td><button onclick="purchase(4)">Purchase</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/Science.png" alt="Tool" class="itemimages"><p id="sciencecps"></p></td>
+                <td id="sciencecost">Cost:50000</td>
+                <td><button onclick="purchase(5)">Purchase</button></td>
+            </tr>
+            <tr>
+                <td><img src="images/Evil.png" alt="Tool" class="itemimages"><p id="evilcps"></p></td>
+                <td id="evilcost">Cost:1677215</td>
+                <td><button onclick="purchase(6)">Purchase</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
         <div>
             <p id="randomnotification"></p>
         </div>
+
+
+        <h1>Rebirth</h1>
         <script src="main.js">
         </script>    
     </body>

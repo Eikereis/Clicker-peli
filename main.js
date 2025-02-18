@@ -44,37 +44,37 @@ function upgrade(x) {
     if (x === 1 && clicks >= toolUpgradeCost) {
         toolp += 2;
         clicks -= toolUpgradeCost;
-        toolUpgradeCost = Math.round(toolUpgradeCost * (1.5 / universalmultiplier));
+        toolUpgradeCost = Math.round(toolUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("toolUpgradeCost").innerText = toolUpgradeCost;
     }
     if (x === 2 && clicks >= farmUpgradeCost) {
         farmp += 5;
         clicks -= farmUpgradeCost;
-        farmUpgradeCost = Math.round(farmUpgradeCost * (1.5 / universalmultiplier));
+        farmUpgradeCost = Math.round(farmUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("farmUpgradeCost").innerText = farmUpgradeCost;
     }
     if (x === 3 && clicks >= workerUpgradeCost) {
         workerp += 25;
         clicks -= workerUpgradeCost;
-        workerUpgradeCost = Math.round(workerUpgradeCost * (1.5 / universalmultiplier));
+        workerUpgradeCost = Math.round(workerUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("workerUpgradeCost").innerText = workerUpgradeCost;
     }
     if (x === 4 && clicks >= machineUpgradeCost) {
         machinep += 100;
         clicks -= machineUpgradeCost;
-        machineUpgradeCost = Math.round(machineUpgradeCost * (1.5 / universalmultiplier));
+        machineUpgradeCost = Math.round(machineUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("machineUpgradeCost").innerText = machineUpgradeCost;
     }
     if (x === 5 && clicks >= scienceUpgradeCost) {
         sciencep += 250;
         clicks -= scienceUpgradeCost;
-        scienceUpgradeCost = Math.round(scienceUpgradeCost * (1.5 / universalmultiplier));
+        scienceUpgradeCost = Math.round(scienceUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("scienceUpgradeCost").innerText = scienceUpgradeCost;
     }
     if (x === 6 && clicks >= evilUpgradeCost) {
         evilp += 10000;
         clicks -= evilUpgradeCost;
-        evilUpgradeCost = Math.round(evilUpgradeCost * (1.5 / universalmultiplier));
+        evilUpgradeCost = Math.round(evilUpgradeCost * ((1.5 / universalmultiplier)) + 1);
         document.getElementById("evilUpgradeCost").innerText = evilUpgradeCost;
     }
 }
@@ -154,7 +154,7 @@ function randomEvent() {
         document.getElementById("randomnotification").innerHTML = "Random Event! <br> Clickpower has been increased!";
     }
     if (rng === 3) {
-        clicks = 15 + (clicks * 3) * (clickpower / 25 + 0.1);
+        clicks = 15 + (clicks * 3) * (clickpower / 25 + 0.5);
         document.getElementById("randomnotification").innerHTML = "Random Event! <br> A random amount of Cookies based on clickpower have been added!";
     }
 
